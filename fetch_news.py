@@ -189,7 +189,7 @@ def post_to_teams(webhook_url: str, card: dict) -> None:
 
 
 def main() -> None:
-    webhook_url = os.environ.get("TEAMS_WEBHOOK_URL")
+    webhook_url = os.environ.get("TEAMS_WEBHOOK_URL_TEST")
     if not webhook_url:
         sys.exit("Error: TEAMS_WEBHOOK_URL environment variable is not set")
 
